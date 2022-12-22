@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <list>
+//my fifth lab
 
 using namespace std;
 
@@ -108,7 +109,6 @@ public:
 
     void Print() 
     {
-        cout << endl;
         cout << "Pharmacy Firm: " << name << endl;
         for (auto med : medications) 
         {
@@ -159,18 +159,19 @@ int main()
     pharmacy->AddMedication(paracylamol);
     pharmacy->AddMedication(veleriana);
 
+    char down const= "__________________________________________" ;
     pharmacy->Print();
-    cout << "______________________________________________" << endl;
+    cout << down << endl;
     cout << "Lowest Price: " << pharmacy->FindLowestPrice() << endl;
 
-    cout << "______________________________________________" << endl;
+    cout << down << endl;
     cout << "Redusing price by 10%: " << endl;
       
     pharmacy->RedusePriceBy10Persent();
 
     pharmacy->Print();
 
-    cout << "______________________________________________" << endl;
+    cout << down << endl;
     cout << "List of medications after deleting expiered ones:  " << endl;
 
     pharmacy->DeleteOldMedications();
