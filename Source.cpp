@@ -161,17 +161,17 @@ int main()
 
     char down const= "__________________________________________" ;
     pharmacy->Print();
-    cout << charDown << endl;
+    cout << down << endl;
     cout << "Lowest Price: " << pharmacy->FindLowestPrice() << endl;
 
-    cout << charDown << endl;
+    cout << down << endl;
     cout << "Redusing price by 10%: " << endl;
       
     pharmacy->RedusePriceBy10Persent();
 
     pharmacy->Print();
 
-    cout << "______________________________________________" << endl;
+    cout << down << endl;
     cout << "List of medications after deleting expiered ones:  " << endl;
 
     pharmacy->DeleteOldMedications();
