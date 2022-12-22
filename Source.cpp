@@ -109,7 +109,6 @@ public:
 
     void Print() 
     {
-        cout << endl;
         cout << "Pharmacy Firm: " << name << endl;
         for (auto med : medications) 
         {
@@ -160,11 +159,12 @@ int main()
     pharmacy->AddMedication(paracylamol);
     pharmacy->AddMedication(veleriana);
 
+    char down const= "__________________________________________" ;
     pharmacy->Print();
-    cout << "______________________________________________" << endl;
+    cout << charDown << endl;
     cout << "Lowest Price: " << pharmacy->FindLowestPrice() << endl;
 
-    cout << "______________________________________________" << endl;
+    cout << charDown << endl;
     cout << "Redusing price by 10%: " << endl;
       
     pharmacy->RedusePriceBy10Persent();
