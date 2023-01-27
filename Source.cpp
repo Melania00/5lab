@@ -160,17 +160,17 @@ int main()
     pharmacy->AddMedication(veleriana);
 
     pharmacy->Print();
-    cout << "______________________________________________" << endl;
+    cout << "____________________________________________" << endl;
     cout << "Lowest Price: " << pharmacy->FindLowestPrice() << endl;
 
-    cout << "______________________________________________" << endl;
+    cout << "____________________________________________" << endl;
     cout << "Redusing price by 10%: " << endl;
       
     pharmacy->RedusePriceBy10Persent();
 
     pharmacy->Print();
 
-    cout << "______________________________________________" << endl;
+    cout << "____________________________________________" << endl;
     cout << "List of medications after deleting expiered ones:  " << endl;
 
     pharmacy->DeleteOldMedications();
