@@ -6,60 +6,60 @@ using namespace std;
 
 class Medicine
 {
-    private:
-        double priceInDollars;
-        int quantityOfTablets;
-        string name;
-        int expirationYear;
-        bool isPrescriptionNeeded;
+ private:
+     double priceInDollars;
+     int quantityOfTablets;
+     string name;
+     int expirationYear;
+     bool isPrescriptionNeeded;
 
-    public:
-        void SetPriceInDollars(double newPrice)
-        {
-            priceInDollars = newPrice;
-        }
+ public:
+     void SetPriceInDollars(double newPrice)
+     {
+         priceInDollars = newPrice;
+     }
 
-        double GetPriceInDollars()
-        {
-            return priceInDollars;
-        }
-        int GetQuantityOfTablets() 
-        {
-            return quantityOfTablets;
-        }
-        string GetName() 
-        {
-            return name;
-        }
-        int GetExpirationDate() 
-        {
-            return expirationYear;
-        }
-        bool GetIsPrescriptionNeeded() 
-        {
-            return isPrescriptionNeeded;
-        }
+     double GetPriceInDollars()
+     {
+         return priceInDollars;
+     }
+     int GetQuantityOfTablets() 
+     {
+         return quantityOfTablets;
+     }
+     string GetName() 
+     {
+         return name;
+     }
+     int GetExpirationDate() 
+     {
+         return expirationYear;
+     }
+     bool GetIsPrescriptionNeeded() 
+     {
+         return isPrescriptionNeeded;
+     }
 
-    Medicine(double priceInDollars, int quantityOfTablets, string name, int expirationYear, bool isPrescriptionNeeded)
-    {
-        this->priceInDollars = priceInDollars;
-        this->quantityOfTablets = quantityOfTablets;
-        this->name = name;
-        this->expirationYear = expirationYear;
-        this->isPrescriptionNeeded = isPrescriptionNeeded;
-    }
-    
-    void Print() 
-    {
-            cout << endl;
-            cout << "Price in dollars: " << priceInDollars << endl;
-            cout << "Guantity of tablets: " << quantityOfTablets << endl;
-            cout << "Medicine name: " << name << endl;
-            cout << "Experation date: " << expirationYear << endl;
-            cout << "Is prescription needed: " << isPrescriptionNeeded << endl;
-    }
-    
-    ~Medicine() {};
+ Medicine(double priceInDollars, int quantityOfTablets, string name, int expirationYear, bool isPrescriptionNeeded)
+ {
+     this->priceInDollars = priceInDollars;
+     this->quantityOfTablets = quantityOfTablets;
+     this->name = name;
+     this->expirationYear = expirationYear;
+     this->isPrescriptionNeeded = isPrescriptionNeeded;
+ }
+ 
+ void Print() 
+ {
+         cout << endl;
+         cout << "Price in dollars: " << priceInDollars << endl;
+         cout << "Guantity of tablets: " << quantityOfTablets << endl;
+         cout << "Medicine name: " << name << endl;
+         cout << "Experation date: " << expirationYear << endl;
+         cout << "Is prescription needed: " << isPrescriptionNeeded << endl;
+ }
+ 
+ ~Medicine() {};
 };
 
 class Pharmacy
@@ -160,17 +160,18 @@ int main()
     pharmacy->AddMedication(veleriana);
 
     pharmacy->Print();
-    cout << "______________________________________________" << endl;
+    string bourder = "______________________________________________";
+    cout << bourder << endl;
     cout << "Lowest Price: " << pharmacy->FindLowestPrice() << endl;
 
-    cout << "______________________________________________" << endl;
+    cout << bourder << endl;
     cout << "Redusing price by 10%: " << endl;
-      
+
     pharmacy->RedusePriceBy10Persent();
 
     pharmacy->Print();
 
-    cout << "______________________________________________" << endl;
+    cout << bourder << endl;
     cout << "List of medications after deleting expiered ones:  " << endl;
 
     pharmacy->DeleteOldMedications();
